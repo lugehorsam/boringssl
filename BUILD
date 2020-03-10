@@ -51,7 +51,7 @@ config_setting(
 
 config_setting(
     name = "windows_x86_64",
-    values = {"cpu": "x64_windows"},
+    constraint_values = ["@platforms//os:windows"],
 )
 
 config_setting(
